@@ -132,9 +132,12 @@ The reported GPU experiments used a batch size of 8 and an image size of 1024.
 
 Among these three Method B runs, the weight of 0.7 achieved the highest mAP@0.50 and mAP@0.50:0.95. The weight of 0.4 achieved the highest precision, while recall was tied with the 0.7 run at the reported precision. These results are descriptive: each setting was evaluated in a single run, so the differences should not be interpreted as statistically significant.
 
+
+![Method B weights comparison](results/weight_comparison/weight_comparison.png)
+
 The overall Method A and Method B metrics are not directly comparable because the methods use different class definitions. A fair comparison requires evaluating both methods under a common hotspot taxonomy and consistent evaluation settings.
 
-Detailed metrics, plots, and selected prediction examples are provided in the `results/` directory as they become available.
+Detailed metrics (csv file), plots (F1, PR, confusion matrix,...) are provided in the `results/` directory.
 
 ## Repository Structure
 
