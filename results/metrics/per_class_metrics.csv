@@ -1,0 +1,35 @@
+Per class metrics,,,,
+,,,,
+Method A — merged hotspot classes,,,,
+,,,,
+Class,Precision,Recall,mAP50,mAP50–95
+panel,0.983,0.998,0.995,0.99
+hotspot,0.813,0.843,0.866,0.454
+scratch,0.849,0.653,0.767,0.399
+,,,,
+,,,,
+Method B — class weight 1.0,,,,
+,,,,
+Class,Precision,Recall,mAP50,mAP50–95
+panel,0.99,0.998,0.995,0.989
+hotspot_obvious,0.567,0.667,0.682,0.464
+hotspot_doubt,0.689,0.752,0.744,0.38
+scratch,0.83,0.709,0.803,0.401
+,,,,
+,,,,
+Method B — class weight 0.7,,,,
+,,,,
+Class,Precision,Recall,mAP50,mAP50–95
+panel,0.989,0.999,0.995,0.99
+hotspot_obvious,0.623,0.729,0.754,0.48
+hotspot_doubt,0.688,0.771,0.759,0.369
+scratch,0.795,0.717,0.79,0.399
+,,,,
+,,,,
+Method B — class weight 0.4,,,,
+,,,,
+Class,Precision,Recall,mAP50,mAP50–95
+panel,0.989,0.999,0.995,0.988
+hotspot_obvious,0.659,0.708,0.738,0.474
+hotspot_doubt,0.707,0.76,0.747,0.346
+scratch,0.811,0.749,0.798,0.391

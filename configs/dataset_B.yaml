@@ -1,0 +1,8 @@
+path: ../datasets/dataset_B
+train: images/train
+val: images/val
+names:
+  0: panel
+  1: hotspot_obvious
+  2: hotspot_doubt
+  3: scratch

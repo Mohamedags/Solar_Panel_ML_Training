@@ -1,0 +1,7 @@
+path: ../datasets/dataset_A
+train: images/train
+val: images/val
+names:
+  0: panel
+  1: hotspot
+  2: scratch
