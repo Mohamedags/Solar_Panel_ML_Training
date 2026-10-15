@@ -101,10 +101,12 @@ Before running the scripts, configure the dataset paths in configs/dataset_A.yam
 
 Use the following commands to inspect the available options:
 
+```
 python src/prepare_dataset.py --help
 python src/train.py --help
 python src/predict.py --help
 
+```
 Training and prediction require the appropriate dataset files and model checkpoints. Refer to the script arguments and configuration files for the available settings.
 
 ## Results
