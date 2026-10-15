@@ -27,12 +27,12 @@ Method B uses four classes:
 - `hotspot_doubt`
 - `scratch`
 
-The hotspot classes are defined using the temperature difference (\(\Delta T\)):
+The hotspot classes are defined according to the temperature difference (\(\Delta T\)):
 
-- `hotspot_obvious`: yellow-looking hotspot with \(\Delta T > 5^\circ C\)
-- `hotspot_doubt`: yellow-looking hotspot with \(\Delta T < 5^\circ C\)
+- `hotspot_obvious`: A yellow-looking hotspot with \(\Delta T \geq 5^\circ\mathrm{C}\).
+- `hotspot_doubt`: A yellow-looking hotspot with \(\Delta T < 5^\circ\mathrm{C}\).
 
-Both categories represent hotspots; `hotspot_doubt` does not indicate uncertainty in the annotation. The treatment of observations with \(\Delta T = 5^\circ C\) should follow the dataset's annotation protocol.
+Both categories represent hotspots. The label `hotspot_doubt` does not indicate uncertainty in the annotation; it refers to a visually suspected hotspot with a temperature difference below \(5^\circ\mathrm{C}\). Observations with \(\Delta T = 5^\circ\mathrm{C}\) are assigned to `hotspot_obvious`.
 
 Method B also investigates class-weighted classification loss by changing the weight assigned to `hotspot_doubt`.
 
